@@ -711,30 +711,10 @@ if (checkoutBtn) {
 }
   //document.querySelector(".cart-footer").prepend(btn);
 }
+  cartBtn.addEventListener("click", injectClearCartBtn);
+// Limiter les descriptions à ~100 caractères pour 2 lignes 
 
-function commandProducts() {
-  if (!cart || cart.length === 0) {
-    alert('Ton panier est vide ! Ajoute des produits avant de commander.');
-    return;
-  }
-
-  const whatsappNumber = '+237681299075'; 
-
-  // Construire le message automatique avec les détails du panier
-  let message = 'Bonjour ! Je souhaite commander les produits suivants :\n\n';
-  cart.forEach(item => {
-    message += `- ${item.name} (Quantité: ${item.qty}) - Prix: ${item.price * item.qty} €\n`;
-  });
-  const total = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
-  message += `\nTotal: ${total} €\n\nMerci de confirmer le paiement et la livraison.`;
-
-  // Encoder le message pour l'URL WhatsApp
-  const encodedMessage = encodeURIComponent(message);
-
-  // Rediriger vers WhatsApp
-  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
-  window.location.href = whatsappUrl;
-}
 })();
+
 
 
