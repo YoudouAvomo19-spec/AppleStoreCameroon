@@ -749,9 +749,10 @@ document.addEventListener('visibilitychange', function() {
       button.disabled = false;
     }
   }
-});});
+});
 
 })();
+
 
 
 
