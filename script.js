@@ -726,6 +726,12 @@ if (checkoutBtn) {
   button.disabled = true; // Désactiver pour éviter les clics multiples
   const whatsappNumber = '+237681299075'; 
 
+  // Envoie événement à GA
+  gtag('event', 'click', {
+    event_category: 'engagement',
+    event_label: 'checkout_button'
+  });
+
   // Construire le message automatique avec les détails du panier
   let message = 'Bonjour ! Je souhaite commander les produits suivants :\n\n';
   cart.forEach(item => {
@@ -752,6 +758,7 @@ document.addEventListener('visibilitychange', function() {
 });
 
 })();
+
 
 
 
