@@ -42,10 +42,10 @@ const mainContent = document.getElementById("mainContent");
 const allProducts = {
   
   store: [
-    {id: 102, name:"MacBook Air M4", price:800000, category:"mac", image:"mac-1.png", desc:"Ultraléger, écran Liquid Retina."},
-    {id: 103, name:"iPad Pro", price:600000, category:"ipad", image:"ipad-1.png", desc:"Puissance X-Series, design fin."},
-    {id: 401, name:"iPhone 17 Pro", price:900000, category:"iphone", image:"iphone-1.png", desc:"Design premium et caméra avancée."},
-    {id: 502, name:"Watch SE", price:180000, category:"watch", image:"watch-3.png", desc:"Essentiel, rapide et très abordable."},
+    {id: 101, name:"MacBook Air M4", price:800000, category:"mac", image:"mac-1.png", desc:"Ultraléger, écran Liquid Retina."},
+    {id: 102, name:"iPad Pro", price:600000, category:"ipad", image:"ipad-1.png", desc:"Puissance X-Series, design fin."},
+    {id: 103, name:"iPhone 17 Pro", price:900000, category:"iphone", image:"iphone-1.png", desc:"Design premium et caméra avancée."},
+    {id: 104, name:"Watch SE", price:180000, category:"watch", image:"watch-3.png", desc:"Essentiel, rapide et très abordable."},
   ],
   mac: [
     {id: 201, name:"MacBook Air", price:800000, category:"mac", image:"mac-1.png", desc:"Fin, solide, rapide et parfait pour le quotidien."},
@@ -60,10 +60,10 @@ const allProducts = {
     {id: 304, name:"iPad Pro", price:600000, category:"ipad", image:"ipad-1.png", desc:"La meilleure expérience iPad, écran XDR."}
   ],
   iphone: [
-    {id: 401, name:"iPhone 17 Pro", price:900000, category:"iphone", image:"iphone-1.png", desc:"Design premium et caméra avancée."},
-    {id: 402, name:"iPhone 16 Pro", price:500000, category:"iphone", image:"Iphone-hero.png", desc:"Grand écran et excellente autonomie."},
-    {id: 403, name:"iPhone Air", price:150000, category:"iphone", image:"iphone-3.png", desc:"Performances Pro dans un format léger."},
-    {id: 404, name:"iPhone 11", price:110000, category:"iphone", image:"iphone-4.png", desc:"Abordable, fiable et polyvalent."}
+    {id: 401, name:"iPhone 11", price:110000, category:"iphone", image:"iphone-4.png", desc:"Abordable, fiable et polyvalent."}    
+    {id: 402, name:"iPhone Air", price:150000, category:"iphone", image:"iphone-3.png", desc:"Performances Pro dans un format léger."},
+    {id: 403, name:"iPhone 17 Pro", price:900000, category:"iphone", image:"iphone-1.png", desc:"Design premium et caméra avancée."},
+    {id: 404, name:"iPhone 16 Pro", price:500000, category:"iphone", image:"Iphone-hero.png", desc:"Grand écran et excellente autonomie."},
   ],
   watch: [
     {id: 501, name:"Watch Series 9", price:250000, category:"watch", image:"watch-2.png", desc:"Suivi santé avancé et performance."},
@@ -746,6 +746,7 @@ document.addEventListener('visibilitychange', function() {
 // Limiter les descriptions à ~100 caractères pour 2 lignes (ajuste selon ta police)
 
 })();
+
 
 
 
